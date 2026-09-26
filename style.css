@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      #fff29b,
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #65ddff,
+      #9b82ff,
+      #ff91cf
+    );
+}
+
+.app {
+  max-width: 850px;
+
+  min-height: 100vh;
+
+  margin: auto;
+
+  padding: 16px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 16px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,.2);
+
+  backdrop-filter: blur(15px);
+}
+
+.avatar {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #ffe35a;
+
+  font-size: 34px;
+
+  box-shadow:
+    0 0 30px #fff36b;
+}
+
+h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+.setup {
+  margin-top: 10px;
+
+  padding: 16px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,.2);
+
+  backdrop-filter: blur(15px);
+}
+
+.setup h2 {
+  margin-top: 0;
+}
+
+#progress {
+  margin-top: 10px;
+
+  font-size: 13px;
+}
+
+#chat {
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 18px 4px;
+}
+
+.message {
+  max-width: 84%;
+
+  padding: 13px 17px;
+
+  margin: 9px 0;
+
+  border-radius: 20px;
+
+  white-space: pre-wrap;
+}
+
+.ai {
+  background: rgba(255,255,255,.25);
+
+  margin-right: auto;
+}
+
+.user {
+  background: rgba(0,0,0,.25);
+
+  margin-left: auto;
+}
+
+.buttons {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+}
+
+button {
+  border: none;
+
+  border-radius: 16px;
+
+  padding: 13px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  background: rgba(255,255,255,.9);
+
+  color: #333;
+}
+
+button:disabled {
+  opacity: .5;
+
+  cursor: not-allowed;
+}
+
+.input {
+  display: flex;
+
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 18px;
+
+  padding: 15px;
+
+  font-size: 16px;
+
+  background: rgba(255,255,255,.9);
+}
+
+.input button {
+  width: 55px;
+
+  background: #ffe45c;
+}
+
+@media(max-width:520px) {
+
+  .buttons {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}

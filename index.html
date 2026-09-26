@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unnamed AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+    <div class="avatar">☀️</div>
+
+    <div>
+      <h1>Unnamed AI</h1>
+      <p id="status">Sunshine and rainbows ✨</p>
+    </div>
+  </header>
+
+  <section class="setup">
+
+    <h2>🧠 AI Brain</h2>
+
+    <p>
+      Download the small AI brain to this device.
+      No API key required.
+    </p>
+
+    <button id="loadButton">
+      🧠 Download AI Brain
+    </button>
+
+    <div id="progress"></div>
+
+  </section>
+
+  <main id="chat"></main>
+
+  <div class="buttons">
+
+    <button onclick="startListening()">
+      🎤 Talk
+    </button>
+
+    <button onclick="takePicture()">
+      📷 Picture
+    </button>
+
+    <button onclick="shareScreen()">
+      🖥️ Screen
+    </button>
+
+    <button onclick="stopEverything()">
+      🛑 Stop
+    </button>
+
+  </div>
+
+  <div class="input">
+
+    <input
+      id="message"
+      placeholder="Text me..."
+      autocomplete="off"
+    >
+
+    <button onclick="sendMessage()">
+      ➤
+    </button>
+
+  </div>
+
+  <video
+    id="camera"
+    autoplay
+    playsinline
+    hidden
+  ></video>
+
+  <video
+    id="screen"
+    autoplay
+    playsinline
+    hidden
+  ></video>
+
+  <canvas id="canvas" hidden></canvas>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
